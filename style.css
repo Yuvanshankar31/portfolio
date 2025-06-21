@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/* NAVIGATION */
+
+nav,
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  justify-content: space-around;
+  height: 17vh;
+}
+
+.nav-links {
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+/* SECTIONS */
+section {
+  padding: 4vh 10rem;
+  min-height: 100vh;
+}
+.section-container {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+/* PROFILE */
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.section__pic-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.section__text {
+  text-align: center;
+  align-self: center;
+}
+.section__text__p1 {
+  font-weight: 600;
+}
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+/* ICONS & BUTTONS */
+.icon {
+  height: 2rem;
+  cursor: pointer;
+}
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+.btn {
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  border: 1px solid rgb(53, 53, 53);
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-color-1 {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+.btn-color-1:hover {
+  background: black;
+}
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+/* ABOUT */
+#about {
+  position: relative;
+}
+.about-pic {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 100rem;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: 1px solid rgb(163, 163, 163);
+  text-align: center;
+  max-width: 320px;
+}
+
+.text-container {
+  max-width: 600px;
+  text-align: justify;
+  padding-top: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+/* SKILLS (EXPERIENCE) */
+
+#skills {
+  position: relative;
+}
+
+.skills-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 10rem;
+}
+
+/* PROJECTS */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  width: 320px;
+  height: 500px;
+  padding: 1.5rem;
+  border: 1px solid rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Consistent image sizing inside cards */
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; /* Instead of cover */
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background-color: white; /* optional: to avoid transparent background */
+}
+
+
+
+.project-title {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  border: 1px solid rgb(163, 163, 163);
+  background-color: rgb(250, 250, 250);
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+footer nav {
+  margin-bottom: 1rem;
+}
+
+footer .nav-links {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+}

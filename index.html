@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuvan Shankar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+      <div class="logo">Yuvan Shankar</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Yuvan Shankar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Yuvan Shankar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yuvan Shankar</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/yuvan-shankar-s-4907a4291/'" />
+          <img src="./assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/Yuvanshankar31'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="About picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Skills icon" class="icon" />
+              <h3>Skills</h3>
+              <p>Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Tech in AI & Data Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+               I'm a passionate full-stack developer with a strong foundation in building dynamic and responsive web applications. 
+  In addition to my development skills, I have experience in machine learning, enabling me to create intelligent and data-driven solutions. 
+  I'm also skilled in Photo and content editing, allowing me to bring a creative edge to technical projects. 
+  I enjoy solving real-world problems, exploring new technologies, and collaborating on innovative ideas that make a meaningful impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Scroll arrow" class="icon arrow" onclick="location.href='#skills'" />
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>CSS</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>React</h3></div></article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Java</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node.js</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Express.js</h3></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PostgreSQL</h3></div></article>
+            </div>
+          </div>
+           <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+             <div class="article-container">
+                <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Tableau</h3></div></article>
+                <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PowerBi</h3></div></article>
+                <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Canva</h3></div></article>
+                <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Vscode</h3></div></article>
+                <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git</h3></div></article>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='#projects'" />
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="project-title">E-commerce App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yuvanshankar31/ecommerce-app'">GitHub</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://ecommerce-frontend-six-flame.vercel.app/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="project-title">Wealth Expense Tracker</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yuvanshankar31/Welth'">GitHub</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://welthyuvan.vercel.app/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="project-title">Wildlife Image Recognition</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yuvanshankar31'">GitHub</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yuvanshankar31'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:sksyuvanshankar@gmail.com">sksyuvanshankar@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/yuvan-shankar-s-4907a4291/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 Yuvan Shankar. All Rights Reserved.</p>
+    </footer>
+
+  
+  </body>
+</html>
