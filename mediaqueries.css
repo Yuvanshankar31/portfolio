@@ -86,14 +86,20 @@
     gap: 0.5rem;
     text-align: center;
   }
- .section__pic-container {
+.section__pic-container {
   width: 100%;
-  max-width: 300px;
   height: auto;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section__pic-container img {
+  width: 250px;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
 }
 
 
