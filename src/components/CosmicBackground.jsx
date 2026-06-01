@@ -30,8 +30,8 @@ export default function CosmicBackground() {
         
         // Curated cosmic colors matching our accent palette
         const colors = [
-          'rgba(139, 92, 246, 0.45)', // Purple
-          'rgba(14, 165, 233, 0.45)',  // Blue
+          'rgba(16, 185, 129, 0.45)', // Emerald Green
+          'rgba(6, 182, 212, 0.45)',  // Teal / Cyan
           'rgba(255, 255, 255, 0.35)', // Soft white
         ];
         this.color = colors[Math.floor(Math.random() * colors.length)];
@@ -102,7 +102,7 @@ export default function CosmicBackground() {
           if (dist < 100) {
             const alpha = (100 - dist) / 100 * 0.12;
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(139, 92, 246, ${alpha})`;
+            ctx.strokeStyle = `rgba(6, 182, 212, ${alpha})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);

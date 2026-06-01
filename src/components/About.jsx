@@ -203,6 +203,25 @@ const LOGOS = {
       <path d="M28 32 h28 v28 h-28 z M72 32 h28 v28 h-28 z M50 72 h28 v28 h-28 z" fill="#ffffff" />
       <path d="M42 60 L64 72 M86 60 L64 72" stroke="#ffffff" strokeWidth="4" />
     </svg>
+  ),
+  PostgreSQL: (
+    <svg viewBox="0 0 128 128" width="16" height="16">
+      <path fill="#336791" d="M98.3 58.7c0-2.3-.9-4.5-2.6-6l-.8-.8c-1.7-1.4-3.7-2.3-5.9-2.6-2.2-.3-4.5.1-6.5 1.1l-1.3.7-1.2.9c-2.3 2.1-3.6 5.1-3.6 8.2 0 1.2.2 2.3.6 3.4l.7 1.6-1.5.8c-3.1 1.6-6.6 2.3-10.1 2.1-3.5-.2-6.8-1.5-9.6-3.7l-1.2-1-1.1-.9c-1.3-1.1-3-1.8-4.7-2-1.7-.2-3.5.1-5 .9L48 52.3c-2 1.3-3.6 3.1-4.7 5.2-1.1 2.1-1.5 4.5-1.2 6.9l.4 3-2.6-1.6c-2.8-1.7-6-2.5-9.3-2.3-3.3.2-6.4 1.4-8.9 3.5l-2.1 1.8 1.4 2.4c1.9 3.2 4.6 5.7 7.9 7.3s6.9 2.2 10.5 1.7l3-.4-.5 3c-.5 3.3.4 6.7 2.5 9.4 2.1 2.7 5.2 4.4 8.7 4.8l3 .3-1.2 2.8c-1.3 3.1-3.6 5.7-6.5 7.4-2.9 1.7-6.2 2.4-9.6 2l-3-.4 1.5 2.6c2.6 4.5 6.6 7.9 11.4 9.8 4.8 1.9 10 2.2 15 .9l2.8-.7-.4-2.9c-.5-3.3.4-6.7 2.5-9.4 2.1-2.7 5.2-4.4 8.7-4.8l2.9-.3-1.5 2.5c-2.4 4-5.9 7.1-10.1 9.1-4.2 2-8.9 2.7-13.6 2.1l-3-.4 2.1 2.2c4.3 4.5 9.8 7.7 15.8 9.2 6 1.5 12.3 1.2 18.2-.9l2.8-1v-60.6z" />
+      <path fill="#336791" d="M123 57.5c-1.2-4.5-3.8-8.4-7.4-11.2-3.6-2.8-8-4.4-12.7-4.6-4.7-.2-9.3 1-13.2 3.4L87 46.8l-.8-.8c-3.1-2.8-7.1-4.6-11.3-5.2-4.2-.6-8.5-.1-12.4 1.5l-2.6 1.1.9 2.7c1.7 5.2.8 10.8-2.5 15.3-3.3 4.5-8.4 7.4-14.1 8.1l-3 .4v8.3l3-.2c6.2-.5 12.3-2.9 17.1-6.8 4.8-3.9 8.2-9.2 9.5-15.1l.9-3.9 2.8 2.8c3.1 3.1 7.1 5.1 11.5 5.8 4.4.7 8.9.1 13-1.7l2.6-1.1-.9 2.7c-1.5 4.5-1.2 9.4.8 13.7 2 4.3 5.5 7.6 9.9 9.3 4.4 1.7 9.3 1.9 13.9.5 4.6-1.4 8.4-4.3 10.8-8.3l1.5-2.5-2.8-1.1z" />
+    </svg>
+  ),
+  Tableau: (
+    <svg viewBox="0 0 128 128" width="16" height="16">
+      <circle cx="64" cy="64" r="56" fill="#f8f9fa" />
+      <path d="M64 24v80M24 64h80" stroke="#e15759" strokeWidth="12" strokeLinecap="round" />
+      <path d="M40 40l48 48" stroke="#4e79a7" strokeWidth="10" strokeLinecap="round" />
+      <path d="M88 40L40 88" stroke="#76b7b2" strokeWidth="10" strokeLinecap="round" />
+      <circle cx="64" cy="64" r="10" fill="#f28e2b" />
+      <circle cx="64" cy="24" r="6" fill="#59a14f" />
+      <circle cx="64" cy="104" r="6" fill="#edc948" />
+      <circle cx="24" cy="64" r="6" fill="#b07aa1" />
+      <circle cx="104" cy="64" r="6" fill="#ff9da7" />
+    </svg>
   )
 };
 
@@ -229,13 +248,13 @@ const SKILL_DATA = {
   'MongoDB': { bg: '#47a248', color: '#ffffff', logo: LOGOS.MongoDB },
   'Supabase': { bg: '#3ecf8e', color: '#ffffff', logo: LOGOS.Supabase },
   'SQL': { bg: '#4682b4', color: '#ffffff', logo: LOGOS.DBMS },
-  'PostgreSQL': { bg: '#4479a1', color: '#ffffff', logo: LOGOS.MySQL },
+  'PostgreSQL': { bg: '#336791', color: '#ffffff', logo: LOGOS.PostgreSQL },
   'DSA': { bg: '#0052cc', color: '#ffffff', logo: LOGOS.DSA },
   'DBMS': { bg: '#4682b4', color: '#ffffff', logo: LOGOS.DBMS },
   'OOP': { bg: '#e65100', color: '#ffffff', logo: LOGOS.OOP },
   
   // Tools
-  'Tableau': { bg: '#f37626', color: '#ffffff', logo: LOGOS.Jupyter },
+  'Tableau': { bg: '#f8f9fa', color: '#333333', logo: LOGOS.Tableau },
   'Power BI': { bg: '#f2c811', color: '#000000', logo: LOGOS.PowerBI },
   'VS Code': { bg: '#007acc', color: '#ffffff', logo: LOGOS.VSCode },
   'Git & GitHub': { bg: '#181717', color: '#ffffff', logo: LOGOS.GitHub },

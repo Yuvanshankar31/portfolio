@@ -44,7 +44,7 @@ export default function Contact() {
             <div 
               className="animate-float"
               style={{
-                background: 'linear-gradient(135deg, var(--accent-purple), #4f46e5)',
+                background: 'linear-gradient(135deg, var(--accent-purple), #047857)',
                 borderRadius: '24px',
                 padding: '40px 30px',
                 color: '#ffffff',
@@ -53,7 +53,7 @@ export default function Contact() {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                boxShadow: '0 12px 40px rgba(139, 92, 246, 0.25)',
+                boxShadow: '0 12px 40px var(--accent-purple-glow)',
                 minHeight: '380px'
               }}
             >
@@ -191,9 +191,9 @@ export default function Contact() {
                   borderRadius: '12px',
                   fontSize: '0.9rem',
                   fontFamily: 'var(--font-heading)',
-                  background: status.type === 'success' ? 'rgba(139,92,246,0.1)' : 'rgba(239,68,68,0.1)',
+                  background: status.type === 'success' ? 'var(--accent-purple-glow)' : 'rgba(239,68,68,0.1)',
                   border: `1px solid ${status.type === 'success' ? 'var(--accent-purple)' : '#ef4444'}`,
-                  color: status.type === 'success' ? '#ddd6fe' : '#fca5a5'
+                  color: status.type === 'success' ? '#a7f3d0' : '#fca5a5'
                 }}>
                   {status.msg}
                 </div>
@@ -231,7 +231,7 @@ export default function Contact() {
           fontFamily: 'var(--font-heading)',
           fontWeight: '600',
           fontSize: '0.95rem',
-          boxShadow: '0 8px 24px rgba(139, 92, 246, 0.3)'
+          boxShadow: '0 8px 24px var(--accent-purple-glow)'
         }}
       >
         <MessageSquare size={18} />

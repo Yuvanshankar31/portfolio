@@ -40,7 +40,7 @@ export default function Footer() {
                   fontWeight: '500',
                   transition: 'var(--transition-fast)'
                 }}
-                onMouseEnter={(e) => e.target.style.color = 'var(--accent-emerald)'}
+                onMouseEnter={(e) => e.target.style.color = 'var(--accent-purple)'}
                 onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
               >
                 {item}
