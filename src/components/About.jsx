@@ -90,7 +90,7 @@ const LOGOS = {
   Seaborn: (
     <svg viewBox="0 0 128 128" width="16" height="16">
       <rect width="128" height="128" rx="16" fill="#4C72B0" />
-      <path fill="#ffffff" d="M20 100c10-20 20-40 30-40s20 30 30 30 20-60 30-60" stroke="#ffffff" strokeWidth="12" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M20 100c10-20 20-40 30-40s20 30 30 30 20-60 30-60" stroke="#ffffff" strokeWidth="12" fill="none" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
   Matplotlib: (
