@@ -5,15 +5,6 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'NeuroShield Stroke Risk Assessment Engine',
-      description: 'An end-to-end, machine learning-powered web application designed to evaluate stroke risk based on client demographics, clinical vitals, and lifestyle factors. Features a custom scikit-learn & SMOTE classification pipeline, paired with a premium glassmorphic UI reporting real-time risk scores and clinical breakdown metrics.',
-      tech: 'React.js, Flask, Python, Scikit-Learn, Tailwind CSS',
-      github: 'https://github.com/Yuvanshankar31/Stroke-Prediction',
-      demo: 'https://neuro-shield-rosy.vercel.app/',
-      image: 'assets/neuro-shield.png'
-    },
-    {
-      id: 2,
       title: 'Outlook E-commerce Website',
       description: 'A full-fledged e-commerce platform developed for a clothing brand. Includes secure user authentication, rich product catalog, interactive shopping cart, Stripe payment integration, and a comprehensive admin panel for inventory and order management.',
       tech: 'React.js, Node.js, Express.js, MongoDB, Stripe',
@@ -22,13 +13,22 @@ export default function Projects() {
       image: 'assets/project-1.png'
     },
     {
-      id: 3,
+      id: 2,
       title: 'Kortex AI Finance Platform',
       description: 'A premium full-stack financial management platform using Clerk authentication. Features include a smart AI-powered receipt scanner, interactive budget planning calendars, advanced expense visual analytics, and bank sync trackers.',
       tech: 'Next.js, Tailwind CSS, Supabase, Prisma, Shadcn UI, Clerk',
       github: 'https://github.com/Yuvanshankar31/Welth',
       demo: 'https://kortex-ai-finance-platform.vercel.app/',
       image: 'assets/kortex.png'
+    },
+    {
+      id: 3,
+      title: 'NeuroShield Stroke Risk Assessment Engine',
+      description: 'An end-to-end, machine learning-powered web application designed to evaluate stroke risk based on client demographics, clinical vitals, and lifestyle factors. Features a custom scikit-learn & SMOTE classification pipeline, paired with a premium glassmorphic UI reporting real-time risk scores and clinical breakdown metrics.',
+      tech: 'React.js, Flask, Python, Scikit-Learn, Tailwind CSS',
+      github: 'https://github.com/Yuvanshankar31/Stroke-Prediction',
+      demo: 'https://neuro-shield-rosy.vercel.app/',
+      image: 'assets/neuro-shield.png'
     },
     {
       id: 4,
