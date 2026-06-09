@@ -9,15 +9,46 @@ export default function Contact() {
     message: ''
   });
   const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({ type: 'error', msg: 'Please fill in all required fields.' });
       return;
     }
-    setStatus({ type: 'success', msg: 'Thank you! Your message has been sent successfully.' });
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    
+    setLoading(true);
+    setStatus(null);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/sksyuvanshankar@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          Name: formData.name,
+          Email: formData.email,
+          Subject: formData.subject || "Portfolio Contact Form Submission",
+          Message: formData.message
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success === "true") {
+        setStatus({ type: 'success', msg: 'Thank you! Your message has been sent successfully.' });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error(data.message || "Something went wrong.");
+      }
+    } catch (error) {
+      setStatus({ type: 'error', msg: 'Failed to send message. Please try again or email directly.' });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleWhatsApp = () => {
@@ -199,9 +230,18 @@ export default function Contact() {
                 </div>
               )}
 
-              <button type="submit" className="btn-purple" style={{ alignSelf: 'flex-start' }}>
+              <button 
+                type="submit" 
+                className="btn-purple" 
+                style={{ 
+                  alignSelf: 'flex-start',
+                  opacity: loading ? 0.7 : 1,
+                  cursor: loading ? 'not-allowed' : 'pointer'
+                }}
+                disabled={loading}
+              >
                 <Send size={16} />
-                Send Message
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
 
             </form>
