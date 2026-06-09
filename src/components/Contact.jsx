@@ -38,14 +38,14 @@ export default function Contact() {
 
       const data = await response.json();
 
-      if (response.ok && data.success === "true") {
+      if (response.ok && (data.success === "true" || data.success === true)) {
         setStatus({ type: 'success', msg: 'Thank you! Your message has been sent successfully.' });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
         throw new Error(data.message || "Something went wrong.");
       }
     } catch (error) {
-      setStatus({ type: 'error', msg: 'Failed to send message. Please try again or email directly.' });
+      setStatus({ type: 'error', msg: error.message || 'Failed to send message. Please try again or email directly.' });
     } finally {
       setLoading(false);
     }
