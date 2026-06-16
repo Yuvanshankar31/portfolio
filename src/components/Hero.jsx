@@ -4,10 +4,9 @@ import profileImg from '../assets/profile.jpg';
 
 export default function Hero() {
   const roles = [
-    'Full Stack Developer',
     'AI & Data Science Student',
-    'IEEE Paper Co-Author',
-    'Aspiring MLOps Engineer'
+    'Full Stack Developer',
+    'Machine Learning Engineer',
   ];
 
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
@@ -69,12 +68,12 @@ export default function Hero() {
           gap: '40px',
           alignItems: 'center'
         }} className="md:grid-cols-12">
-          
+
           {/* Left Column: Text Content (Grid span 7) */}
-          <div className="md:col-span-7" style={{ 
-            display: 'flex', 
-            flexDirection: 'column', 
-            gap: '24px', 
+          <div className="md:col-span-7" style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '24px',
             alignItems: 'flex-start',
             textAlign: 'left'
           }}>
@@ -100,7 +99,7 @@ export default function Hero() {
               }}>
                 Yuvan Shankar S
               </h1>
-              
+
               {/* Rotating Typed Role */}
               <div style={{ height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
                 <h2 style={{
@@ -178,8 +177,8 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Profile Picture (Grid span 5) */}
-          <div className="md:col-span-5" style={{ 
-            display: 'flex', 
+          <div className="md:col-span-5" style={{
+            display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             position: 'relative'
@@ -211,9 +210,9 @@ export default function Hero() {
               zIndex: 2,
               transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)'
             }}>
-              <img 
-                src={profileImg} 
-                alt="Yuvan Shankar S" 
+              <img
+                src={profileImg}
+                alt="Yuvan Shankar S"
                 style={{
                   width: '100%',
                   height: '100%',
