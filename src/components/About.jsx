@@ -222,6 +222,37 @@ const LOGOS = {
       <circle cx="24" cy="64" r="6" fill="#b07aa1" />
       <circle cx="104" cy="64" r="6" fill="#ff9da7" />
     </svg>
+  ),
+  MachineLearning: (
+    <svg viewBox="0 0 128 128" width="16" height="16">
+      <path fill="#ffffff" d="M64 16a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 88a40 40 0 1 1 40-40 40 40 0 0 1-40 40z"/>
+      <circle cx="64" cy="64" r="12" fill="#ffffff"/>
+      <circle cx="36" cy="64" r="8" fill="#ffffff"/>
+      <circle cx="92" cy="64" r="8" fill="#ffffff"/>
+      <circle cx="64" cy="36" r="8" fill="#ffffff"/>
+      <circle cx="64" cy="92" r="8" fill="#ffffff"/>
+      <line x1="36" y1="64" x2="64" y2="64" stroke="#ffffff" strokeWidth="4"/>
+      <line x1="64" y1="36" x2="64" y2="64" stroke="#ffffff" strokeWidth="4"/>
+      <line x1="92" y1="64" x2="64" y2="64" stroke="#ffffff" strokeWidth="4"/>
+      <line x1="64" y1="92" x2="64" y2="64" stroke="#ffffff" strokeWidth="4"/>
+    </svg>
+  ),
+  LLMs: (
+    <svg viewBox="0 0 128 128" width="16" height="16">
+      <rect x="16" y="24" width="96" height="64" rx="12" fill="none" stroke="#ffffff" strokeWidth="8"/>
+      <path d="M40 88l-16 16v-16" fill="none" stroke="#ffffff" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+      <circle cx="48" cy="56" r="6" fill="#ffffff"/>
+      <circle cx="64" cy="56" r="6" fill="#ffffff"/>
+      <circle cx="80" cy="56" r="6" fill="#ffffff"/>
+    </svg>
+  ),
+  RAG: (
+    <svg viewBox="0 0 128 128" width="16" height="16">
+      <rect x="24" y="16" width="80" height="96" rx="8" fill="none" stroke="#ffffff" strokeWidth="8"/>
+      <line x1="44" y1="44" x2="84" y2="44" stroke="#ffffff" strokeWidth="8" strokeLinecap="round"/>
+      <line x1="44" y1="68" x2="84" y2="68" stroke="#ffffff" strokeWidth="8" strokeLinecap="round"/>
+      <line x1="44" y1="92" x2="68" y2="92" stroke="#ffffff" strokeWidth="8" strokeLinecap="round"/>
+    </svg>
   )
 };
 
@@ -244,6 +275,9 @@ const SKILL_DATA = {
   'Matplotlib': { bg: '#11557c', color: '#ffffff', logo: LOGOS.Matplotlib },
   'YOLO v8': { bg: '#002fa7', color: '#ffffff', logo: LOGOS.YOLO },
   'scikit-learn': { bg: '#f7931e', color: '#ffffff', logo: LOGOS.ScikitLearn },
+  'Machine Learning': { bg: '#4f46e5', color: '#ffffff', logo: LOGOS.MachineLearning },
+  'LLMs': { bg: '#7c3aed', color: '#ffffff', logo: LOGOS.LLMs },
+  'RAG': { bg: '#0891b2', color: '#ffffff', logo: LOGOS.RAG },
   'MySQL': { bg: '#4479a1', color: '#ffffff', logo: LOGOS.MySQL },
   'MongoDB': { bg: '#47a248', color: '#ffffff', logo: LOGOS.MongoDB },
   'Supabase': { bg: '#3ecf8e', color: '#ffffff', logo: LOGOS.Supabase },
@@ -266,10 +300,10 @@ const SKILL_DATA = {
 export default function About() {
   const skills = [
     'C', 'Python', 'Java',
-    'HTML5', 'CSS3', 'JavaScript', 'React', 'Next.js', 'Node.js', 'Express.js', 'Spring Boot', 
-    'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'YOLO v8', 'scikit-learn', 
-    'MySQL', 'MongoDB', 'Supabase', 'SQL', 'PostgreSQL',
-    'DSA', 'DBMS', 'OOP'
+    'HTML5', 'CSS3', 'JavaScript', 'React', 
+    'YOLO v8', 'scikit-learn', 'Machine Learning', 'LLMs', 'RAG',
+    'MySQL', 'MongoDB', 'Supabase', 'SQL',
+    'DBMS', 'OOP'
   ];
 
   const tools = [
@@ -298,7 +332,7 @@ export default function About() {
           <div className="lg:col-span-7" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
             
             {/* My Introduction Glass Card */}
-            <div className="glass-panel" style={{ padding: '30px', background: 'rgba(17, 24, 39, 0.3)' }}>
+            <div className="glass-panel" style={{ padding: '30px', background: 'var(--card-bg)' }}>
               <h3 style={{
                 fontFamily: 'var(--font-heading)',
                 fontSize: '1.6rem',
@@ -366,7 +400,7 @@ export default function About() {
           <div className="lg:col-span-5" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
             
             {/* Skills Card */}
-            <div className="glass-panel" style={{ padding: '30px', background: 'rgba(17, 24, 39, 0.3)' }}>
+            <div className="glass-panel" style={{ padding: '30px', background: 'var(--card-bg)' }}>
               <h3 style={{
                 fontFamily: 'var(--font-heading)',
                 fontSize: '1.4rem',
@@ -415,7 +449,7 @@ export default function About() {
             </div>
 
             {/* Tools Card */}
-            <div className="glass-panel" style={{ padding: '30px', background: 'rgba(17, 24, 39, 0.3)' }}>
+            <div className="glass-panel" style={{ padding: '30px', background: 'var(--card-bg)' }}>
               <h3 style={{
                 fontFamily: 'var(--font-heading)',
                 fontSize: '1.4rem',

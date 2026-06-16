@@ -50,7 +50,7 @@ export default function Accomplishments() {
     },
     {
       id: 'publications',
-      title: 'Publications & Experience',
+      title: 'Publications',
       description: 'Click here to view',
       icon: <BookOpen size={32} className="text-purple" style={{ color: 'var(--accent-purple)' }} />,
       content: (
@@ -100,31 +100,6 @@ export default function Accomplishments() {
               <ExternalLink size={14} /> View Paper on IEEE Xplore
             </a>
           </div>
-
-          {/* Internships Box */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-            <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.2rem', color: 'var(--accent-purple)' }}>Internship Milestones</h4>
-            
-            <div className="glass-panel" style={{ padding: '16px', background: 'rgba(255,255,255,0.02)' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '6px' }}>
-                <strong style={{ fontSize: '1.05rem' }}>Modern Full Stack Development Intern</strong>
-                <span style={{ fontSize: '0.85rem', color: 'var(--accent-purple)' }}>Algo Tutor (2025)</span>
-              </div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                Acquired hands-on expertise building performant full-stack apps with React.js, Express, Next.js, and MongoDB. Worked on both client-side speedups and database endpoints.
-              </p>
-            </div>
-
-            <div className="glass-panel" style={{ padding: '16px', background: 'rgba(255,255,255,0.02)' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '6px' }}>
-                <strong style={{ fontSize: '1.05rem' }}>MERN Stack Development Intern</strong>
-                <span style={{ fontSize: '0.85rem', color: 'var(--accent-purple)' }}>Connect Training Solution (2025)</span>
-              </div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                Constructed clean, responsive web user interfaces in React. Collaborated via Git and resolved integration bugs on live APIs.
-              </p>
-            </div>
-          </div>
         </div>
       )
     }
@@ -161,7 +136,7 @@ export default function Accomplishments() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '16px',
-                background: 'rgba(7, 10, 19, 0.4)'
+                background: 'var(--card-bg)'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.borderColor = 'var(--accent-purple)';
@@ -208,7 +183,7 @@ export default function Accomplishments() {
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundColor: 'rgba(3, 7, 18, 0.88)',
+            backgroundColor: 'var(--overlay-bg)',
             backdropFilter: 'blur(12px)',
             display: 'flex',
             alignItems: 'center',
@@ -236,7 +211,7 @@ export default function Accomplishments() {
                   position: 'absolute',
                   top: '24px',
                   right: '24px',
-                  background: 'rgba(255,255,255,0.03)',
+                  background: 'var(--social-bg)',
                   border: '1px solid var(--glass-border)',
                   borderRadius: '50%',
                   width: '36px',

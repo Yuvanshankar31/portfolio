@@ -78,7 +78,7 @@ export default function Projects() {
                 gap: '30px',
                 padding: '32px',
                 alignItems: 'center',
-                background: 'rgba(11, 15, 25, 0.45)'
+                background: 'var(--card-bg)'
               }}
             >
               
@@ -173,9 +173,7 @@ export default function Projects() {
                     position: 'absolute',
                     top: 0,
                     left: 0,
-                    width: '100%',
-                    height: '100%',
-                    background: 'linear-gradient(to bottom, transparent 60%, rgba(3, 7, 18, 0.8))',
+                    background: 'linear-gradient(to bottom, transparent 60%, var(--bg-primary))',
                     pointerEvents: 'none'
                   }}></div>
                 </div>

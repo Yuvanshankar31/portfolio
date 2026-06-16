@@ -78,26 +78,28 @@ export default function Hero() {
             textAlign: 'left'
           }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <p style={{
-                color: 'var(--accent-purple)',
-                fontSize: '1.15rem',
-                fontWeight: '600',
-                textTransform: 'uppercase',
-                letterSpacing: '0.15em',
-                marginBottom: '10px'
-              }}>
-                Hello, I'm
-              </p>
               <h1 style={{
                 fontSize: 'clamp(2.5rem, 5vw, 4.2rem)',
                 lineHeight: '1.1',
                 marginBottom: '14px',
-                background: 'linear-gradient(to right, #ffffff, #9ca3af)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                fontWeight: '800'
+                fontWeight: '800',
+                color: 'var(--text-primary)'
               }}>
-                Yuvan Shankar S
+                Hi, I'm{' '}
+                <span style={{
+                  background: 'linear-gradient(to right, #10b981, #059669)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}>
+                  Yuvan
+                </span>{' '}
+                <span style={{
+                  background: 'linear-gradient(to right, #06b6d4, #0891b2)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}>
+                  Shankar S
+                </span>
               </h1>
 
               {/* Rotating Typed Role */}
@@ -151,7 +153,7 @@ export default function Hero() {
                     width: '44px',
                     height: '44px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                    backgroundColor: 'var(--social-bg)',
                     border: '1px solid var(--glass-border)',
                     color: 'var(--text-secondary)',
                     transition: 'var(--transition-smooth)',
@@ -183,20 +185,7 @@ export default function Hero() {
             alignItems: 'center',
             position: 'relative'
           }}>
-            {/* Glowing active green presence dot at top-left of the picture container */}
-            <div style={{
-              position: 'absolute',
-              top: '15px',
-              left: '15px',
-              width: '28px',
-              height: '28px',
-              borderRadius: '50%',
-              backgroundColor: '#10b981',
-              border: '4px solid var(--bg-primary)',
-              zIndex: 3,
-              boxShadow: '0 0 15px #10b981',
-              animation: 'pulsePresence 2s infinite'
-            }}></div>
+
 
             {/* Circular Profile Avatar (Right aligned) */}
             <div className="avatar-container animate-float" style={{
@@ -217,6 +206,7 @@ export default function Hero() {
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
+                  objectPosition: 'center 10%',
                   transition: 'all 0.4s ease'
                 }}
                 onMouseEnter={(e) => {
