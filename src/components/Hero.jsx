@@ -6,7 +6,7 @@ export default function Hero() {
   const roles = [
     'AI & Data Science Student',
     'Full Stack Developer',
-    'Machine Learning Engineer',
+    'Machine Learning Engineer'
   ];
 
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
