@@ -346,10 +346,10 @@ export default function About() {
                 My Introduction
               </h3>
               <p style={{ fontSize: '1.02rem', marginBottom: '20px' }}>
-                I am a highly motivated <strong>Artificial Intelligence and Data Science</strong> undergraduate student at <strong>Sri Eshwar College of Engineering (SECE)</strong>. I build responsive and scalable full-stack applications (MERN & Next.js) and orchestrate state-of-the-art AI/ML pipelines (YOLO, Scikit-Learn).
+                Hello, I'm <strong>Yuvan Shankar</strong>, a B.Tech undergraduate in <strong>Artificial Intelligence and Data Science</strong> at <strong>Sri Eshwar College of Engineering</strong>. I am passionate about Machine Learning, Artificial Intelligence, and Full-Stack Development. I enjoy building intelligent applications, developing scalable web solutions, and solving real-world problems through technology.
               </p>
               <p style={{ fontSize: '1.02rem' }}>
-                I love solving algorithmic challenges, designing smart cloud-based optimization systems, and exploring data intelligence. I bring a creative edge to technical projects through my experience in content layout and photo editing.
+                I am continuously expanding my technical skills by working on hands-on projects and exploring modern AI and software development tools. I am eager to contribute, learn from experienced professionals, and grow as an AI and software engineer.
               </p>
             </div>
 
@@ -372,7 +372,7 @@ export default function About() {
                 <div>
                   <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.1rem', fontWeight: '600' }}>Education</h4>
                   <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>B.Tech AI & DS (2023-27)</p>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--accent-purple)', fontWeight: '600' }}>7.6 CGPA (SECE)</p>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--accent-purple)', fontWeight: '600' }}>7.7 CGPA (upto 6th sem)</p>
                 </div>
               </div>
 

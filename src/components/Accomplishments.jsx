@@ -13,6 +13,7 @@ export default function Accomplishments() {
       content: (
         <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {[
+            { name: 'Linguaskill', issuer: 'Cambridge English', year: '2026', link: 'https://drive.google.com/file/d/1C5KFaRrfGdjj9VJtJ6BZgx5aMBwmjUbO/view' },
             { name: 'Machine Learning', issuer: 'Coursera', year: '2025', link: 'https://www.coursera.org/account/accomplishments/certificate/BJ39REOZRN9U' },
             { name: 'Python Basic', issuer: 'HackerRank', year: '2025', link: 'https://www.hackerrank.com/certificates/' },
             { name: 'C Programming', issuer: 'Udemy', year: '2024', link: 'https://www.udemy.com/certificate/UC-3b657324-c517-42a5-bff3-5abdc9fcec07/' },

@@ -5,6 +5,15 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: 'TreeSense Imaging',
+      description: 'An automated forest analytics platform utilizing satellite and aerial imagery. Features high-accuracy tree counting, a green cover density estimator, a tree species identifier, optimal path planning, and forest health canopy analyzers to assess vegetative conditions using HSL color analysis.',
+      tech: 'HTML, CSS, YOLOv8, Machine Learning, Scikit-Learn, Python, OpenCV, Flask',
+      github: 'https://github.com/Yuvanshankar31/TreeSense?tab=readme-ov-file#image-analytics-for-tree-enumeration',
+      demo: 'https://github.com/Yuvanshankar31/TreeSense',
+      image: 'assets/treesense.png'
+    },
+    {
+      id: 2,
       title: 'Outlook E-commerce Website',
       description: 'A full-fledged e-commerce platform developed for a clothing brand. Includes secure user authentication, rich product catalog, interactive shopping cart, Stripe payment integration, and a comprehensive admin panel for inventory and order management.',
       tech: 'React.js, Node.js, Express.js, MongoDB, Stripe',
@@ -13,7 +22,7 @@ export default function Projects() {
       image: 'assets/project-1.png'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Kortex AI Finance Platform',
       description: 'A premium full-stack financial management platform using Clerk authentication. Features include a smart AI-powered receipt scanner, interactive budget planning calendars, advanced expense visual analytics, and bank sync trackers.',
       tech: 'Next.js, Tailwind CSS, Supabase, Prisma, Shadcn UI, Clerk',
@@ -22,7 +31,7 @@ export default function Projects() {
       image: 'assets/kortex.png'
     },
     {
-      id: 3,
+      id: 4,
       title: 'NeuroShield Stroke Risk Assessment Engine',
       description: 'An end-to-end, machine learning-powered web application designed to evaluate stroke risk based on client demographics, clinical vitals, and lifestyle factors. Features a custom scikit-learn & SMOTE classification pipeline, paired with a premium glassmorphic UI reporting real-time risk scores and clinical breakdown metrics.',
       tech: 'React.js, Flask, Python, Scikit-Learn, Tailwind CSS',
@@ -31,7 +40,7 @@ export default function Projects() {
       image: 'assets/neuro-shield.png'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Bite Dash Food Delivery Website',
       description: 'A beautiful and modern food ordering and delivery web application featuring an interactive dish menu catalog, seamless shopping cart addition, smooth animated checkout screens, and real-time mock ordering trackers.',
       tech: 'React.js, Node.js, Express.js, MongoDB, CSS3',
@@ -40,7 +49,7 @@ export default function Projects() {
       image: 'assets/bite-dash.png'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Smart AI Infrastructure Optimization',
       description: 'An advanced AI-driven cloud orchestration platform that intelligently predicts, analyzes, and minimizes cloud-based deep learning training costs by leveraging real-time multi-cloud pricing data and predictive machine learning models.',
       tech: 'React, Vite, Tailwind CSS, FastAPI, SQLite, Scikit-Learn',
@@ -49,7 +58,7 @@ export default function Projects() {
       image: 'assets/smart-ai.png'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Wildlife Conservation Image Recognition',
       description: 'Developed real-time image recognition using Ultralytics YOLO to detect animal species from camera trap images, aiding wildlife monitoring and conservation efforts. Integrated automated data processing to maximize detection accuracy.',
       tech: 'YOLO v8, Python, OpenCV, Machine Learning, PyTorch',

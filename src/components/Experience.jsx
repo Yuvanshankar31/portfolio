@@ -1,21 +1,22 @@
 import React from 'react';
-import { Calendar, Briefcase } from 'lucide-react';
+import { Calendar, Briefcase, ExternalLink } from 'lucide-react';
 
 export default function Experience() {
   const experiences = [
     {
       role: 'Modern Full Stack Development Intern',
       company: 'Algo Tutor',
-      duration: 'January 2025 - March 2025',
+      duration: 'July 2025 - August 2025',
       description: 'Acquired hands-on expertise building performant full-stack applications with React.js, Express, Next.js, and MongoDB. Worked on both client-side optimizations and database endpoints.',
       skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Git', 'JavaScript', 'HTML5', 'CSS3']
     },
     {
       role: 'MERN Stack Development Intern',
       company: 'Connect Training Solution',
-      duration: 'September 2024 - November 2024',
+      duration: 'January 2025 - February 2025',
       description: 'Constructed clean, responsive web user interfaces in React. Collaborated via Git version control and resolved API integration bugs to ensure smooth app behavior.',
-      skills: ['React.js', 'MongoDB', 'Express.js', 'Node.js', 'JavaScript', 'Git', 'REST APIs', 'TailwindCSS']
+      skills: ['React.js', 'MongoDB', 'Express.js', 'Node.js', 'JavaScript', 'Git', 'REST APIs', 'TailwindCSS'],
+      link: 'https://drive.google.com/file/d/1WwMa5OOSTx-7qUP3fiCBHVwvYRMScWUS/view'
     }
   ];
 
@@ -138,9 +139,33 @@ export default function Experience() {
                     </div>
 
                     {/* Description */}
-                    <p style={{ fontSize: '0.94rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '20px' }}>
+                    <p style={{ fontSize: '0.94rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: exp.link ? '12px' : '20px' }}>
                       {exp.description}
                     </p>
+
+                    {/* Certificate Link */}
+                    {exp.link && (
+                      <div style={{ marginBottom: '18px' }}>
+                        <a
+                          href={exp.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                            color: 'var(--accent-purple)',
+                            fontSize: '0.9rem',
+                            fontWeight: '600',
+                            textDecoration: 'none',
+                          }}
+                          className="certificate-link"
+                        >
+                          <ExternalLink size={15} />
+                          <span>Verify Certificate</span>
+                        </a>
+                      </div>
+                    )}
 
                     {/* Skills pills */}
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -204,6 +229,13 @@ export default function Experience() {
           border-color: var(--accent-purple) !important;
           color: var(--text-primary) !important;
           transform: translateY(-1px);
+        }
+        .certificate-link {
+          transition: var(--transition-smooth);
+        }
+        .certificate-link:hover {
+          color: var(--text-primary) !important;
+          text-decoration: underline !important;
         }
       `}</style>
     </section>

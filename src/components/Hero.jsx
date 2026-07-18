@@ -123,7 +123,7 @@ export default function Hero() {
             </div>
 
             <p style={{ fontSize: '1.1rem', maxWidth: '580px', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
-              B.Tech student at <strong>Sri Eshwar College of Engineering</strong> specializing in Artificial Intelligence and Data Science. Building scalable full-stack applications and orchestrating smart AI pipelines.
+              B.Tech student at <strong>Sri Eshwar College of Engineering</strong>, specializing in Artificial Intelligence and Data Science, with a keen interest in Machine Learning, Artificial Intelligence, and Full-Stack Development.
             </p>
 
             {/* CTAs */}

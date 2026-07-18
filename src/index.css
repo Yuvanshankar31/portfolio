@@ -135,22 +135,22 @@ p {
   transition: var(--transition-fast);
 }
 .pill-badge-purple {
-  border-color: rgba(16, 185, 129, 0.25);
-  background: rgba(16, 185, 129, 0.05);
-  color: #a7f3d0;
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.08);
+  color: #047857;
 }
 .pill-badge-purple:hover {
-  background: rgba(16, 185, 129, 0.14);
+  background: rgba(16, 185, 129, 0.15);
   border-color: var(--accent-purple);
   box-shadow: 0 0 12px var(--accent-purple-glow);
 }
 .pill-badge-blue {
-  border-color: rgba(6, 182, 212, 0.25);
-  background: rgba(6, 182, 212, 0.05);
-  color: #cffafe;
+  border-color: rgba(6, 182, 212, 0.3);
+  background: rgba(6, 182, 212, 0.08);
+  color: #0e7490;
 }
 .pill-badge-blue:hover {
-  background: rgba(6, 182, 212, 0.14);
+  background: rgba(6, 182, 212, 0.15);
   border-color: var(--accent-blue);
   box-shadow: 0 0 12px var(--accent-blue-glow);
 }
