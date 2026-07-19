@@ -206,7 +206,7 @@ export default function Hero() {
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  objectPosition: 'center 10%',
+                  objectPosition: 'center top',
                   transition: 'all 0.4s ease'
                 }}
                 onMouseEnter={(e) => {
